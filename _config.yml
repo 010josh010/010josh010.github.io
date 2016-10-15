@@ -1,17 +1,16 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
+title: Joshua Vaughn- Web Developer
 description: "A blog about lorem ipsum ..."
 baseurl: "/space-jekyll-template" # the subpath of your site
-url: "http://victorvoid.github.io"
+url: "https://010josh010.github.io"
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
-email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
+username: 010josh010
+user_title: Joshua Vaughn - FrontEnd Developer
+email: 010josh010@gmail.com
+twitter_username: 010josh010
+github_username:  010josh010
+gplus_username:  010josh010
 
 # Build settings
 markdown: kramdown
@@ -41,10 +40,10 @@ links:
 # projects in header index
 projects:
   - name: asciilang
-    url: https://github.com/victorvoid/asciilang
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+    url: https://github.com/010josh010/010josh010.github.io
+  - name: hangman
+    url: https://github.com/010josh010/hangman
+  - name: dbz-battler
+    url: https://github.com/010josh010/dbz-battler 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
