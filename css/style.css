@@ -259,39 +259,60 @@ address a{
 .flipped{
     -moz-transform: scale(-1, 1) translate(200px,0px) ;
     -webkit-transform: scale(-1, 1) translate(200px,0px);
+    -ms-transform: scale(-1, 1) translate(200px,0px);
     -o-transform: scale(-1, 1) translate(200px,0px);
     transform: scale(-1, 1) translate(200px,0px);
     filter: FlipH;         
 }
 
 
-
-@-webkit-keyframes jump {
- 
+@keyframes jump{
     0%{top:80px}
     5%{top:80px}
     10%{top:80px}
     50%{top:-55px}
     55%{top:-55px}
     100%{top:70px}
-    /*
-    0% {-webkit-transform: translate(0px, -5px )}
-    10% {-webkit-transform: translate(0px, -10px )}
-    25% {-webkit-transform: translate(0px, -25px )}
-    40% {-webkit-transform: translate(0px,-40px )}
-    50% {-webkit-transform: translate(0px, -50px )}
-    60%{-webkit-transform: translate(0px, -40px)}
-    75% {-webkit-transform: translate(0px, -25px )}
-    90%{-webkit-transform: translate(0px ,-10px)}
-    100%{-webkit-transform: translate(0px , -5px)}
-    
-    */
+}
+
+
+@-webkit-keyframes jump {
+    0%{top:80px}
+    5%{top:80px}
+    10%{top:80px}
+    50%{top:-55px}
+    55%{top:-55px}
+    100%{top:70px}
+}
+
+@-moz-keyframes jump {
+    0%{top:80px}
+    5%{top:80px}
+    10%{top:80px}
+    50%{top:-55px}
+    55%{top:-55px}
+    100%{top:70px}
+}
+
+@-ms-keyframes jump {
+    0%{top:80px}
+    5%{top:80px}
+    10%{top:80px}
+    50%{top:-55px}
+    55%{top:-55px}
+    100%{top:70px}
 }
 
 .jumping{
     -webkit-animation-name: jump; 
     -webkit-animation-duration:1s;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: jump; 
+    -moz-animation-duration:1s;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-name: jump; 
+    -ms-animation-duration:1s;
+    -ms-animation-timing-function: ease-in-out;
     animation-name: jump;
     animation-duration:1s;
     animation-timing-function: ease-in-out;
