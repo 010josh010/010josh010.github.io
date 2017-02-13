@@ -9,7 +9,7 @@ var projects = [
         img: {
             src:'img/hangoutsimulator.gif'
         },
-        info: 'A Chatting application built with React.js, Node, Express and MongoDB. The UI of this applicaiton is styled and themed after the <a href="https://yanderesimulator.com/about/" target="_blank">Yandere Simulator</a> Video game developed by <a href="https://yanderedev.wordpress.com/" target="_blank">Yanderedev.</a> You can use the app via a test account <span> username: test password: 12345678 </span>',
+        info: 'A Chatting application built with React.js, Node, Express, Socket.io and MongoDB. The UI of this applicaiton is styled and themed after the <a href="https://yanderesimulator.com/about/" target="_blank">Yandere Simulator</a> Video game developed by <a href="https://yanderedev.wordpress.com/" target="_blank">Yanderedev.</a> You can use the app via a test account <span> username: test password: 12345678 </span>',
         url: 'http://hangout-simulator-010josh010.herokuapp.com/'
     }, 
     
