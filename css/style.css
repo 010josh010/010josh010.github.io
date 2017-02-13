@@ -173,20 +173,19 @@ address a{
 #project-bin{
     margin-top:25px;
     padding:15px;
-    overflow-y: scroll;
 }
 
 .project{
    float:left;
    width:45%;
-   height:500px;
-   overflow: auto;
+   height:750px;
    padding:15px;
    margin:5px;
 }
 
 .project article{
     padding:10px;
+    height:400px;
 }
 
 .project article p{
@@ -207,6 +206,9 @@ address a{
     font-size:1.2em;
 }
 
+.project-link{
+    position:relative; 
+}
 .loading-icon{
     padding: 50px;
 }

@@ -94,6 +94,7 @@ projects.forEach(function(project){
     
     //setting the href of the a tag to the project's url property
     link.href = project.url; 
+    link.className = 'project-link';
     
     link.innerHTML = 'See '+ project.name + ' in action';
     
