@@ -27,7 +27,7 @@ var projects = [
         img: {
             src:'img/nutrimon2.gif'
         },
-        info: 'Nutrimon is a free platform for eating healthier and calculating nutrition. Character images are by <a href="http://us.tamagotchifriends.com/characters/" target="_blank">© Bandai - All rights reserved</a> but are there as placeholders for a proff of concept. The idea is based on the old ©Tamagatchi games that would allow you to feed a digital pet. This application is built using Javascript/JQuery/CSS, and is using Firebase to store the users information',
+        info: 'Nutrimon is a free platform for eating healthier and calculating nutrition. Character images are by <a href="http://us.tamagotchifriends.com/characters/" target="_blank">© Bandai - All rights reserved</a> but are there as placeholders for a proof of concept. The idea is based on the old ©Tamagatchi games that would allow you to feed a digital pet. This application is built using Javascript/JQuery/CSS, and is using Firebase to store the users information',
         url: 'https://nutrimon-team-nurtrimon.herokuapp.com/'
     }, 
     
