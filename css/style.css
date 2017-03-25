@@ -208,6 +208,7 @@ address a{
     animation-duration: 1s; 
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    line-height: 18px;
     
 }
 
