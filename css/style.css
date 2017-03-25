@@ -395,7 +395,7 @@ address a{
 /*animations*/ 
 
 @keyframes beat{
-    from{transform: scale(.5,.5)}
+    from{transform: scale(.75,.75)}
     to{transform: scale(1,1)}
 }
 
