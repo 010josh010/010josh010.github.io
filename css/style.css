@@ -500,6 +500,11 @@ address a{
 @media screen and (max-width:870px){
     .project{
         width:42%;
+        height:900px;
+    }
+    
+    .about article{
+        padding:0px;
     }
 }
 
@@ -520,6 +525,8 @@ address a{
     .contact-info a{
         float:left;
         width:100%;
+        margin:10px 0px;
+        line-height: 25px;
     }
 }
 
