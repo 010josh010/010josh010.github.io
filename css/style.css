@@ -1,44 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Barrio|Comfortaa'); 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Barrio|Comfortaa|Bangers|'); 
 
 
 body{
     padding:0px;
     margin:0px;
+    color:#fff;
+    background: rgba(76,76,76,);
+    background: -moz-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(25%, rgba(102,102,102,1)), color-stop(39%, rgba(71,71,71,1)), color-stop(50%, rgba(44,44,44,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(17,17,17,1)), color-stop(76%, rgba(43,43,43,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(45deg, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
+
+
+    
 }
 
-body h1{
+h1{
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
     font-weight: bold;
     font-size:2em;
 }
 
-span{
-    color:darkcyan;
+h1:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgba(2, 216, 226 , .9), 0 0 30px rgba(2, 216, 226 , .9), 0 0 40px rgba(2, 216, 226 , .9), 0 0 55px rgba(2, 216, 226 , .9), 0 0 75px rgba(2, 216, 226 , .9);
+    cursor:default;
 }
 
+
+span{
+    color:rgba(2, 216, 226 , .9);
+}
 
 a{
     text-decoration: none;
 }
 
-
 a:link{
+    color:rgba(2, 216, 226 , .9);
+}
+
+a:visited{
+    color:rgba(2,216,226,1);
+}
+
+a ,span:hover{
     color:darkcyan;
 }
 
 address a{
-    color:darkcyan; 
+    color:rgba(2, 216, 226 , .9); 
     font-family: 'Comfortaa'
 }
 
 
 
 .about{
+    clear:both;
     font-family: 'Comfortaa' , sans-serif;
     text-align: center;
     padding:25px;
-    margin:0 auto;
+    margin:15px auto;
+}
+
+.about h1{
+    margin:15px;
+    
+}
+
+.about article{
+   padding:25px 150px;
 }
 
 .about p{
@@ -62,7 +96,7 @@ address a{
     position: relative;
     bottom:15px;
     font-size:.75em;
-    color:darkcyan;
+    color:rgba(2, 216, 226 , .9);
     text-shadow: 1px 1px #000;
 }
 
@@ -98,34 +132,47 @@ address a{
 .contact{
     clear:both;
     text-align: center;
+    margin:25px;
 }
 
-.contact h1{
-    margin-bottom: 25px;
-}
 
 .contact-info{
     padding:50px;
 }
 
+.contact-info a{
+    margin:10px;
+}
+
 
 .controls{
+    float:left;
     margin:15px;
-    width:550px; 
+    width:5000px; 
     height:200px; 
     overflow: visible;
     font-family: 'Press Start 2P', sans-serif;
+    animation-name:from-right; 
+    animation-duration:.6s; 
+    animation-timing-function: ease-in; 
+    -moz-animation-name:from-right; 
+    -moz-animation-duration:.6s; 
+    -moz-animation-timing-function: ease-in; 
+    -ms-animation-name:from-right; 
+    -ms-animation-duration:.6s; 
+    -ms-animation-timing-function: ease-in; 
 }
 
 .controls h3{
     padding:15px;
+    font-family: 'Comfortaa' , sans-serif;
     
 }
 
 .controls img{
     float:left;
-    width:150px; 
-    height:100px;
+    width:100px; 
+    height:80px;
     margin:15px;
     padding:5px;
     
@@ -139,24 +186,61 @@ address a{
 }
 
 .controlBtn{
-    padding:10px;
+    padding:15px;
+    float:left;
     font-family: 'Press Start 2P' , sans-serif;
     cursor:pointer;
     margin:5px;
+    background-color:rgba(2, 216, 226 , .9);
+    border: 1px solid #000; 
+    
 }
 
 .credits{
+    float:left;
     font-family: 'Comfortaa' , sans-serif;
     font-size:.7em;
     text-decoration: none;
     margin:15px;
+    opacity: 0;
+    animation-name:fadeTo;
+    animation-delay: .6s;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
 }
 
-.credits li{
-   padding:2px;
+.credits li {
+   padding:5px;
+   margin: 0 15px;
    
 }
 
+.credits p {
+    padding:5px; 
+}
+
+.credits h3{
+    font-size:1.5em;
+    margin:7px;
+}
+
+
+.heart{
+    animation-name:beat; 
+    animation-duration:1s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -moz-animation-name:beat; 
+    -moz-animation-duration:1s; 
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name:beat; 
+    -moz-animation-duration:1s; 
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+}
         
 #player{
     position:relative; 
@@ -168,6 +252,7 @@ address a{
 .projects{
     text-align: center;
     overflow:hidden;
+
 }
 
 #project-bin{
@@ -190,38 +275,59 @@ address a{
 
 .project article p{
     padding:25px;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .project img{
     height:250px;
     width:275px;
-    padding:25px;
     text-align: center;
-    
+    margin: 5px;
+    border:1px solid darkcyan;
+    box-shadow: 1px 1px 50px darkcyan;
 }
 
 .project h3{
     font-weight: bold;
     font-size:1.2em;
+    margin-bottom: 10px;
 }
 
 .project-link{
     position:relative; 
 }
+
+.project:hover{
+    background-color:rgba(2, 216, 226 , .2);
+    
+}
+
 .loading-icon{
     padding: 50px;
 }
 
 .logo{
-    font-family: 'Comfortaa' , sans-serif;
+    font-family: 'Bangers' , sans-serif;
     position: absolute;
-    left:35%;
+    left:39%;
     top:50px;
     font-size:50px;
-    color: darkcyan;
+    letter-spacing: 2px;
+    color:rgba(2, 216, 226 , .9);
     text-shadow: 1px 1px #000;
     z-index: 2; 
+    animation-name:shrink; 
+    animation-duration: .5s; 
+    animation-timing-function: ease-in;
+    -webkit-animation-name:shrink; 
+    -webkit-animation-duration: .5s; 
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-name:shrink; 
+    -moz-animation-duration: .5s; 
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-name:shrink; 
+    -ms-animation-duration: .5s; 
+    -ms-animation-timing-function: ease-in;
 }
 
 .game-container{
@@ -253,7 +359,7 @@ address a{
     color:black;
     width:100px; 
     height:50px;
-    color:darkcyan; 
+    color:rgba(2, 216, 226 , .9); 
     text-shadow: 1px 1px #000;
     
 }
@@ -265,6 +371,90 @@ address a{
     -o-transform: scale(-1, 1) translate(200px,0px);
     transform: scale(-1, 1) translate(200px,0px);
     filter: FlipH;         
+}
+
+
+
+.jumping{
+    -moz-animation-name: jump; 
+    -moz-animation-duration:1s;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-name: jump; 
+    -ms-animation-duration:1s;
+    -ms-animation-timing-function: ease-in-out;
+    animation-name: jump;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+}
+
+.wrapper{
+    padding:10px;   
+}
+
+
+/*animations*/ 
+
+@keyframes beat{
+    from{transform: scale(.5,.5)}
+    to{transform: scale(1,1)}
+}
+
+@-moz-keyframes beat{
+    from{transform: scale(.5,.5)}
+    to{transform: scale(1,1)}
+}
+
+@-ms-keyframes beat{
+    from{transform: scale(.5,.5)}
+    to{transform: scale(1,1)}
+}
+
+
+@keyframes fadeTo{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@-moz-keyframes fadeTo{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@-ms-keyframes fadeTo{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes from-right{
+    from{transform:translate(700px , 0px)}
+    to{transform:translate(0px , 0px)}
+}
+
+@-moz-keyframes from-right{
+    from{transform:translate(700px , 0px)}
+    to{transform:translate(0px , 0px)}
+}
+
+@-ms-keyframes from-right{
+    from{transform:translate(700px , 0px)}
+    to{transform:translate(0px , 0px)}
+}
+
+
+@keyframes shrink{
+    from {transform: scale(3,3) rotate(-180deg)}
+    to {transform: scale (1,1) rotate(0deg)}
+}
+
+
+@-moz-keyframes shrink{
+    from {transform: scale(3,3) rotate(-180deg)}
+    to {transform: scale (1,1) rotate(0deg)}
+}
+
+@-ms-keyframes shrink{
+    from {transform: scale(3,3) rotate(-180deg)}
+    to {transform: scale (1,1) rotate(0deg)}
 }
 
 
@@ -305,25 +495,8 @@ address a{
     100%{top:70px}
 }
 
-.jumping{
-    -webkit-animation-name: jump; 
-    -webkit-animation-duration:1s;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: jump; 
-    -moz-animation-duration:1s;
-    -moz-animation-timing-function: ease-in-out;
-    -ms-animation-name: jump; 
-    -ms-animation-duration:1s;
-    -ms-animation-timing-function: ease-in-out;
-    animation-name: jump;
-    animation-duration:1s;
-    animation-timing-function: ease-in-out;
-}
 
-.wrapper{
-    padding:10px;   
-}
-
+/*media-queries*/ 
 @media screen and (max-width:870px){
     .project{
         width:42%;
@@ -333,10 +506,20 @@ address a{
 @media screen and (max-width:650px){
     .project{
         width:90%;
+        height:975px;
+    }
+    
+    .project img{
+        width:75%;
     }
     
     .logo{
         left:10%;
+    }
+    
+    .contact-info a{
+        float:left;
+        width:100%;
     }
 }
 

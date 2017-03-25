@@ -273,6 +273,19 @@ function play(){
     disableButton(playBtn)
     enableButton(pauseBtn)
     
+   //for ouset effect
+   pauseBtn.style.borderBottomColor = "#000"; 
+   pauseBtn.style.borderRightColor = "#000";
+   pauseBtn.style.borderTopColor = "#fff"; 
+   pauseBtn.style.borderLeftColor="#fff"; 
+    
+   //for inset outset effect 
+   playBtn.style.borderBottomColor = "#fff"; 
+   playBtn.style.borderRightColor = "#fff";
+   playBtn.style.borderTopColor = "#000"; 
+   playBtn.style.borderLeftColor="#000";
+    
+    
     console.log('playing')
     
 }
@@ -284,6 +297,19 @@ function pause(){
     
     enableButton(playBtn)
     disableButton(pauseBtn)
+    
+   //for inset outset effect 
+   pauseBtn.style.borderBottomColor = "#fff"; 
+   pauseBtn.style.borderRightColor = "#fff";
+   pauseBtn.style.borderTopColor = "#000"; 
+   pauseBtn.style.borderLeftColor="#000";
+    
+   //for ouset effect
+   playBtn.style.borderBottomColor = "#000"; 
+   playBtn.style.borderRightColor = "#000";
+   playBtn.style.borderTopColor = "#fff"; 
+   playBtn.style.borderLeftColor="#fff"; 
+
     
     console.log('paused')
     
