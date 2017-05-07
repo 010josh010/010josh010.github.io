@@ -509,7 +509,7 @@ address a{
 /*media-queries*/ 
 @media screen and (max-width:870px){
     
-     body {
+     html , body {
         overflow-x: hidden !important;
     }
     
@@ -525,7 +525,7 @@ address a{
 
 @media screen and (max-width:650px){
     
-     body {
+    html , body {
         overflow-x: hidden !important;
     }
     
