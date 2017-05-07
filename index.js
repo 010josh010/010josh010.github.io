@@ -121,9 +121,9 @@ projects.forEach(function(project){
    
     preloadedImg.onload = function(){
         //set the class of the img
-       // loadingImg.className = 'project-img'; 
+        loadingImg.className = 'project-img'; 
         //remove the spinner 
-        //loadingImg.src= project.img.src;
+        loadingImg.src= project.img.src;
         
     }
     
