@@ -507,6 +507,11 @@ address a{
 
 /*media-queries*/ 
 @media screen and (max-width:870px){
+    
+     body {
+        overflow-x: hidden !important;
+    }
+    
     .project{
         width:42%;
         height:900px;
@@ -518,6 +523,11 @@ address a{
 }
 
 @media screen and (max-width:650px){
+    
+     body {
+        overflow-x: hidden !important;
+    }
+    
     .project{
         width:90%;
         height:975px;
