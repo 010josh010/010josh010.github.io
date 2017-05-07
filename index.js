@@ -70,17 +70,17 @@ projects.forEach(function(project){
     
     title.innerHTML = project.name;
     
-    //var loadingIcon = document.createElement('i');
-    //loadingIcon.className = 'loading-icon fa fa-spinner fa-pulse fa-lg';
-    
     //for img wrapper 
     var imgWrapper  = document.createElement('a');
     imgWrapper.href= project.url;
     imgWrapper.target = "_blank";
-     //for handling of the img 
-    var img = new Image();
     
-    imgWrapper.appendChild(img);
+     //for handling of the loading spinner 
+    var loadingImg = new Image();
+    loadingImg.className = 'loading-icon'; 
+    loadingImg.src = 'img/ring.gif'; 
+    
+    imgWrapper.appendChild(loadingImg);
     
     //for adding the article  
     var article = document.createElement('article');
@@ -120,8 +120,10 @@ projects.forEach(function(project){
     preloadedImg.src = project.img.src;
    
     preloadedImg.onload = function(){
+        //set the class of the img
+        loadingImg.className = 'project-img'; 
         //remove the spinner 
-        img.src= project.img.src;
+        loadingImg.src= project.img.src;
         
     }
     

@@ -242,6 +242,13 @@ address a{
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
 }
+
+.loading-icon{
+    height:75px;
+    width:75px;
+    padding:90px;
+}
+
         
 #player{
     position:relative; 
@@ -279,7 +286,8 @@ address a{
     line-height: 30px;
 }
 
-.project img{
+
+.project-img{
     height:250px;
     width:275px;
     text-align: center;
@@ -303,9 +311,7 @@ address a{
     
 }
 
-.loading-icon{
-    padding: 50px;
-}
+
 
 .logo{
     font-family: 'Bangers' , sans-serif;
