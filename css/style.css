@@ -534,8 +534,16 @@ address a{
         height:975px;
     }
     
+    #coin {
+        display:none;
+    }
+    
+    .controls {
+        display:none;
+    }
+    
     .logo{
-        left:10%;
+        left:20%;
     }
     
     .contact-info a{
