@@ -547,6 +547,10 @@ address a{
     .logo{
         left:15%;
     }
+
+    .loading-icon{
+        padding:25px;
+    }
     
     .contact-info a{
         float:left;
