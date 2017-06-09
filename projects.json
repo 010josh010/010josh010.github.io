@@ -1,0 +1,56 @@
+ [
+    
+    {
+        name: 'Hangout-Simulator',
+        img: {
+            src:'img/hangoutsimulator.gif'
+        },
+        info: 'A Chatting application built with React.js, Node, Express, Socket.io and MongoDB. The UI of this applicaiton is styled and themed after the <a href="https://yanderesimulator.com/about/" target="_blank">Yandere Simulator</a> Video game developed by <a href="https://yanderedev.wordpress.com/" target="_blank">Yanderedev.</a> You can use the app via a test account <span> username: test password: 12345678 </span>',
+        url: 'http://hangout-simulator-010josh010.herokuapp.com/'
+    }, 
+    
+    {
+        name: 'Crunchy-Scraper',
+        img: {
+            src:'img/crunchyscraper.gif'
+        },
+        info: 'A Node.js Scraping applicaiton that Collects news articles from <a href="http://www.crunchyroll.com/ target="_blank">crunchyroll.com</a>. Built with JQuery, Node , Express, and MongoDB.',
+        url: 'https://crunchyscraper-010josh010.herokuapp.com/'
+    }, 
+    
+    {
+        name: 'Nutrimon',
+        img: {
+            src:'img/nutrimon2.gif'
+        },
+        info: 'Nutrimon is a free platform for eating healthier and calculating nutrition. Character images are by <a href="http://us.tamagotchifriends.com/characters/" target="_blank">© Bandai - All rights reserved</a> but are there as placeholders for a proof of concept. The idea is based on the old ©Tamagatchi games that would allow you to feed a digital pet. This application is built using Javascript/JQuery/CSS, and is using Firebase to store the users information',
+        url: 'https://nutrimon-team-nurtrimon.herokuapp.com/'
+    }, 
+    
+    {
+        name: 'DBZ-Battler',
+        img: {
+            src:'img/dbzbattler.gif'
+        },
+        info: 'Dragonball Z is an anime created by Akira Toriyama that I grew up watching and still love to this day. I decided to build a turn based battle game built in Javascript/JQuery/CSS',
+        url: 'https://dbz-battler-010josh010.herokuapp.com/'
+    }, 
+    
+    {
+        name: 'Hangman',
+        img: {
+            src:'img/hangman.gif'
+        },
+        info: 'This is a hangmangame built for the browser with multiple categories and theme music. This was one of the first homework projects that I built at the Coding Bootcamp at UNC-Chapel-Hill.',
+        url: 'https://hangman-javascript-010josh010.herokuapp.com/'
+    },
+    
+    {
+        name:'MatchPlusPlus',
+        img: {
+            src:'img/matchplusplus2.gif'
+        },
+        info: 'A friend finding and dating application built in AngularJS , Node, Express, and Redis Database. Not currently deployed as it is still in development but feel free to download the source and run it locally. Requires installation of redis server',
+        url: 'https://github.com/010josh010/matchPlus-Plus'
+    }
+]
