@@ -6,7 +6,13 @@ var jumping;
 var coinSound = new Audio('audio/coin.wav'); 
 var jumpSound = new Audio('audio/ah.mp3');
 var packagedMusic = new Audio('audio/packaged.mp3'); 
-var music = new Audio('audio/polka.mp3'); 
+var music = new Audio('audio/polka.mp3');
+
+//for setting default volume 
+var defaultVolume = .3 ; 
+
+packagedMusic.volume = defaultVolume; 
+music.volume = defaultVolume ;  
 
 //updateable elements 
 var coin = true; 
