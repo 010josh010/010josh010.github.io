@@ -543,6 +543,10 @@ address a{
     .controls {
         display:none;
     }
+
+    .credits {
+        display:none;
+    }
     
     .logo{
         left:15%;
