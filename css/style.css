@@ -527,12 +527,9 @@ address a{
     }
     
     .project{
+        margin:0 auto;
         width:100%;
         height:975px;
-    }
-
-    .project img{
-        width:90%;
     }
     
     #coin {
