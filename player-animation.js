@@ -9,7 +9,7 @@ var packagedMusic = new Audio('audio/packaged.mp3');
 var music = new Audio('audio/polka.mp3');
 
 //for setting default volume 
-var defaultVolume = .3 ; 
+var defaultVolume = .15 ; 
 
 packagedMusic.volume = defaultVolume; 
 music.volume = defaultVolume ;  
