@@ -25,7 +25,6 @@ getJSON('projects.json')
     
         //projects to be appended to the page 
         var projects  = data.projects;  
-        console.log(data);
         //for handling of projects
         projects.forEach(function(project){
         var div = document.createElement('div'); 

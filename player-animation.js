@@ -255,7 +255,6 @@ function scoreUpdate(score){
         var text = document.createTextNode('Score:'+ score); 
         p.appendChild(text); 
         elm.appendChild(p); 
-        console.log('score updated'); 
 
 }
 
@@ -311,7 +310,6 @@ function pause(){
    playBtn.style.borderLeftColor="#fff"; 
 
     
-    console.log('paused')
     
     
 }
