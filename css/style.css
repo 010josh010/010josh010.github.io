@@ -14,10 +14,6 @@ body{
     background: -moz-linear-gradient(bottom, #434343, #000000);
     background: -o-linear-gradient(bottom, #434343, #000000);
     background: linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-
-
-
-    
 }
 
 h1{
