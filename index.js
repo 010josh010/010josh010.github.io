@@ -1,9 +1,7 @@
 //getting the project bin to place the projects into 
 var projectBin = document.getElementById('project-bin'); 
 
-
-
-//ajax call for projects
+//ajax promise call for projects
 
 var getJSON = function(url) {
     return new Promise(function(res, rej){
