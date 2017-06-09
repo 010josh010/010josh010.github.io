@@ -532,7 +532,7 @@ address a{
         height:975px;
     }
 
-    .project img{
+    .project-img{
         width:90%;
     }
     
@@ -546,12 +546,6 @@ address a{
     
     .logo{
         left:15%;
-    }
-
-    .loading-icon{
-        height:30px;
-        width:30px;
-        padding:25px;
     }
     
     .contact-info a{
