@@ -142,7 +142,9 @@ address a{
     margin:10px;
 }
 
-
+.contact-info a:hover{
+    cursor:pointer; 
+}
 .controls{
     float:left;
     margin:15px;
@@ -525,7 +527,7 @@ address a{
     }
     
     .project{
-        width:90%;
+        width:100%;
         height:975px;
     }
     
