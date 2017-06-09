@@ -549,6 +549,8 @@ address a{
     }
 
     .loading-icon{
+        height:30px;
+        width:30px;
         padding:25px;
     }
     
