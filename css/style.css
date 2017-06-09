@@ -530,6 +530,10 @@ address a{
         width:100%;
         height:975px;
     }
+
+    .project img{
+        width:90%;
+    }
     
     #coin {
         display:none;
