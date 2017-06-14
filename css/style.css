@@ -526,6 +526,14 @@ address a{
         overflow-x: hidden !important;
     }
     
+    .avatar{
+        display:none;
+    }
+    
+    .score{
+        display:none;
+    }
+    
     .project{
         margin:0 auto;
         width:90%;
