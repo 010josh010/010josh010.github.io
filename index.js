@@ -2,7 +2,6 @@
 var projectBin = document.getElementById('project-bin'); 
 
 //ajax promise call for projects
-
 var getJSON = function(url) {
     return new Promise(function(res, rej){
         var xhr = new XMLHttpRequest(); 
@@ -62,9 +61,7 @@ getJSON('projects.json')
         //setting the href of the a tag to the project's url property
         link.href = project.url; 
         link.className = 'project-link';
-
         link.innerHTML = 'See '+ project.name + ' in action';
-
         link.target = '_blank'
 
         //appends to the article 
