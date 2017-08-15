@@ -11,6 +11,8 @@ var isIE = function(){
 
 if(isIE){
     console.log('you are using ie'); 
+} else {
+    console.log('you are not using ie'); 
 }
 
 //ajax promise call for projects
