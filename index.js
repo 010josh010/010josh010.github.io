@@ -1,10 +1,21 @@
 //getting the project bin to place the projects into 
 var projectBin = document.getElementById('project-bin'); 
 
+var isIE = function(){
+    if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)){
+        return true; 
+    } else {
+        return false; 
+    }
+}
+
+if(isIE){
+    console.log('you are using ie'); 
+}
+
 //ajax promise call for projects
 var getJSON = function(url) {
     return new Promise(function(res, rej){
-        setTimeout(function() {       
         var xhr = new XMLHttpRequest(); 
         xhr.open('get' , url , true); 
         xhr.responseType = 'json'; 
@@ -17,10 +28,10 @@ var getJSON = function(url) {
             }
         }; 
         xhr.send(); 
-    }, 1000);
-  
     })
 }; 
+
+
 
 getJSON('projects.json')
     .then(function(data) {
