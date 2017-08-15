@@ -4,6 +4,7 @@ var projectBin = document.getElementById('project-bin');
 //ajax promise call for projects
 var getJSON = function(url) {
     return new Promise(function(res, rej){
+        setTimeout(function() {       
         var xhr = new XMLHttpRequest(); 
         xhr.open('get' , url , true); 
         xhr.responseType = 'json'; 
@@ -16,6 +17,8 @@ var getJSON = function(url) {
             }
         }; 
         xhr.send(); 
+    }, 1000);
+  
     })
 }; 
 
