@@ -3,17 +3,13 @@ var projectBin = document.getElementById('project-bin');
 
 var isIE = function(){
     if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)){
-        return true; 
+        console.log('you are using ie'); 
     } else {
-        return false; 
+        console.log('you are not using ie');
     }
 }
 
-if(isIE){
-    console.log('you are using ie'); 
-} else {
-    console.log('you are not using ie'); 
-}
+
 
 //ajax promise call for projects
 var getJSON = function(url) {
