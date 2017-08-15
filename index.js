@@ -62,7 +62,7 @@ getJSON('projects.json')
         link.href = project.url; 
         link.className = 'project-link';
         link.innerHTML = 'See '+ project.name + ' in action';
-        link.target = '_blank'
+        link.target = '_blank';
 
         //appends to the article 
         article.appendChild(p);
@@ -72,7 +72,7 @@ getJSON('projects.json')
         //appends to the container div 
         div.appendChild(title);
         div.appendChild(imgWrapper);
-        //div.appendChild(loadingIcon);
+    
         //image goes here 
         div.appendChild(article); 
 
@@ -90,8 +90,6 @@ getJSON('projects.json')
             loadingImg.src= project.img.src;
 
         }
-
-
 
     })
 
