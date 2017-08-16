@@ -1,5 +1,16 @@
  {
      "projects":[
+         
+         {
+            "name":"Miku-Dash", 
+             "img":{
+                 "src":"img/mikudash.gif"
+             }, 
+             "info": "Miku dash is a browser based platformer I am testing using <a href=\"https://phaser.io\" target=\"_blank\">Phaser.io</a>. The game is currently in development and not deployed. The standard arcade box physics collider shapes need to be replaced with more accurate ones in order to implement p2 physics and fix bugs with the player character standing on objects. This will also pave the ground to adding some enemies, a working HUD, menu system, and level design. A testable prototype build is comming soon. Stayed tuned." 
+             , 
+             "url":"https://github.com/010josh010/miku-dash"
+         }, 
+         
          {
             "name": "Hangout-Simulator",
             "img": {
