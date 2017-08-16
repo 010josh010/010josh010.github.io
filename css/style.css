@@ -249,6 +249,14 @@ address a{
     padding:90px;
 }
 
+.new{
+    position:relative;
+    height:150px; 
+    width:150px;
+    top:10px;
+    right:10px; 
+}
+
         
 #player{
     position:relative; 
