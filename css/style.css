@@ -250,6 +250,7 @@ address a{
 }
 
 .new{
+    float:right;
     position:relative;
     z-index: 1000;
     height:33px; 
