@@ -41,6 +41,20 @@ var render = function(data){
 
         //assigning id value based on the projects name 
         div.id = project.name; 
+        
+           //for new project assignment
+        if(project === projects[0]){
+            var newRibbon = document.createElement('div');
+            newRibbon.className = 'new';
+            
+            var newIcon = new Image();
+            newIcon.className = 'new-icon'; 
+            newIcon.src = 'img/new-icon.png';
+            
+            newRibbon.appendChild(newIcon); 
+            
+            div.appendChild(newRibbon);
+        }
 
         var title = document.createElement('h3'); 
 
@@ -86,20 +100,6 @@ var render = function(data){
         //image goes here 
         div.appendChild(article);
         
-        //for new project assignment
-        if(project === projects[0]){
-            var newRibbon = document.createElement('div');
-            newRibbon.className = 'new';
-            
-            var newIcon = new Image();
-            newIcon.className = 'new-icon'; 
-            newIcon.src = 'img/new-icon.png';
-            
-            newRibbon.appendChild(newIcon); 
-            
-            div.appendChild(newRibbon);
-        }
-
 
         //appends to the project bin 
         projectBin.appendChild(div); 
