@@ -29,6 +29,7 @@ var detectIE = function() {
   return false;
 }
 
+
 var render = function(data){
     //projects to be appended to the page 
     var projects  = data.projects;  
@@ -38,13 +39,6 @@ var render = function(data){
         //assigning class
         div.className = 'project';
 
-        //for new project assignment
-        if(project === projects[0]){
-            var newRibbon = new Image(); 
-            newRibbon.className = 'new';
-            newRibbon.src = 'img/new-icon.png';
-            div.appendChild(newRibbon);
-        }
         //assigning id value based on the projects name 
         div.id = project.name; 
 
@@ -90,7 +84,21 @@ var render = function(data){
         div.appendChild(imgWrapper);
 
         //image goes here 
-        div.appendChild(article); 
+        div.appendChild(article);
+        
+        //for new project assignment
+        if(project === projects[0]){
+            var newRibbon = document.createElement('div');
+            newRibbon.className = 'new';
+            
+            var newIcon = new Image();
+            newIcon.className = 'new-icon'; 
+            newIcon.src = 'img/new-icon.png';
+            
+            newRibbon.appendChild(newIcon); 
+            
+            div.appendChild(newRibbon);
+        }
 
 
         //appends to the project bin 

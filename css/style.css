@@ -252,10 +252,15 @@ address a{
 .new{
     position:relative;
     z-index: 1000;
-    height:25%; 
-    width:25%;
+    height:33px; 
+    width:75px;
     top:10px;
     right:10px; 
+}
+
+.new-icon{
+    height:100%; 
+    width:100%;
 }
 
         
