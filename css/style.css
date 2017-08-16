@@ -249,8 +249,9 @@ address a{
     padding:90px;
 }
 
-.new img{
+.new{
     position:relative;
+    z-index: 1000;
     height:25%; 
     width:25%;
     top:10px;
