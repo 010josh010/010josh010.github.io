@@ -29,48 +29,22 @@ var detectIE = function() {
   return false;
 }
 
-// Get IE or Edge browser version
-var version = detectIE();
-
-if (version === false) {
-  console.log('you are using a modern browser')
-} else if (version >= 12) {
-  console.log('you are using edge or ie12')
-} else {
-  console.log('you are using ie 11 and below')
-}
-
-
-//ajax promise call for projects
-var getJSON = function(url) {
-    return new Promise(function(res, rej){
-        var xhr = new XMLHttpRequest(); 
-        xhr.open('get' , url , true); 
-        xhr.responseType = 'json'; 
-        xhr.onload = function(){
-            var status = xhr.status; 
-            if(status == 200) {
-                res(xhr.response); 
-            } else {
-                rej(status); 
-            }
-        }; 
-        xhr.send(); 
-    })
-}; 
-
-
-
-getJSON('projects.json')
-    .then(function(data) {
-    
-        //projects to be appended to the page 
-        var projects  = data.projects;  
-        //for handling of projects
-        projects.forEach(function(project){
+var render = function(data){
+    //projects to be appended to the page 
+    var projects  = data.projects;  
+    //for handling of projects
+    projects.forEach(function(project){
         var div = document.createElement('div'); 
         //assigning class
         div.className = 'project';
+
+        //for new project assignment
+        if(project === projects[0]){
+            var newRibbon = new Image(); 
+            newRibbon.className = 'new';
+            newRibbon.src = 'img/new-icon.png';
+            div.appendChild(newRibbon);
+        }
         //assigning id value based on the projects name 
         div.id = project.name; 
 
@@ -81,7 +55,7 @@ getJSON('projects.json')
         //for img wrapper 
         var imgWrapper  = document.createElement('a');
         imgWrapper.href= project.url;
-        imgWrapper.target = "_blank";
+        imgWrapper.target = '_blank';
 
          //for handling of the loading spinner 
         var loadingImg = new Image();
@@ -114,7 +88,7 @@ getJSON('projects.json')
         //appends to the container div 
         div.appendChild(title);
         div.appendChild(imgWrapper);
-    
+
         //image goes here 
         div.appendChild(article); 
 
@@ -134,5 +108,42 @@ getJSON('projects.json')
         }
 
     })
+}
 
-})
+//ajax promise call for projects
+var getJSON = function(url) {
+    return new Promise(function(res, rej){
+        var xhr = new XMLHttpRequest(); 
+        xhr.open('get' , url , true); 
+        xhr.responseType = 'json'; 
+        xhr.onload = function(){
+            var status = xhr.status; 
+            if(status == 200) {
+                res(xhr.response); 
+            } else {
+                rej(status); 
+            }
+        }; 
+        xhr.send(); 
+    })
+}; 
+
+// Get IE or Edge browser version
+var version = detectIE();
+
+if (version === false) {
+  getJSON('projects.json')
+    .then(function(data){
+      render(data);
+  })
+} else {
+  $.get('projects.json' , function(data){
+      render(data);
+  })
+}
+
+
+
+
+
+
