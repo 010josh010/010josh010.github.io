@@ -5,14 +5,11 @@ var playerDirection;
 var jumping; 
 var coinSound = new Audio('audio/coin.wav'); 
 var jumpSound = new Audio('audio/ah.mp3');
-var packagedMusic = new Audio('audio/packaged.mp3'); 
-var music = new Audio('audio/polka.mp3');
 
 //for setting default volume 
-var defaultVolume = .15 ; 
-
-packagedMusic.volume = defaultVolume; 
-music.volume = defaultVolume ;  
+coinSound.volume = .1; 
+jumpSound.volume= .2;
+ 
 
 //updateable elements 
 var coin = true; 
@@ -152,8 +149,7 @@ var player = {
                             var gameContainer = document.querySelector('.game-container');
                             var note = document.getElementById('note'); 
                             gameContainer.removeChild(note); 
-                            note = false; 
-                            changeMusic(packagedMusic); 
+                            note = false;  
                             score++;
                            scoreUpdate(score); 
                    } , 500); 
@@ -266,20 +262,18 @@ function scoreUpdate(score){
 
 function init(){
     scoreUpdate(score);
-    music.loop = true ; 
-    pause();
+    play();
 }
 
 function play(){
     paused = false; 
-    music.play(); 
     player.displayIdle();
     
     disableButton(playBtn)
     enableButton(pauseBtn)
     
    //for ouset effect
-   pauseBtn.style.borderBottomColor = "#000"; 
+  /* pauseBtn.style.borderBottomColor = "#000"; 
    pauseBtn.style.borderRightColor = "#000";
    pauseBtn.style.borderTopColor = "#fff"; 
    pauseBtn.style.borderLeftColor="#fff"; 
@@ -289,22 +283,20 @@ function play(){
    playBtn.style.borderRightColor = "#fff";
    playBtn.style.borderTopColor = "#000"; 
    playBtn.style.borderLeftColor="#000";
+  */
     
-    
-    console.log('playing')
     
 }
 
 function pause(){
     paused = true; 
     clearAnimation();
-    music.pause();
     
     enableButton(playBtn)
     disableButton(pauseBtn)
     
    //for inset outset effect 
-   pauseBtn.style.borderBottomColor = "#fff"; 
+  /* pauseBtn.style.borderBottomColor = "#fff"; 
    pauseBtn.style.borderRightColor = "#fff";
    pauseBtn.style.borderTopColor = "#000"; 
    pauseBtn.style.borderLeftColor="#000";
@@ -314,7 +306,7 @@ function pause(){
    playBtn.style.borderRightColor = "#000";
    playBtn.style.borderTopColor = "#fff"; 
    playBtn.style.borderLeftColor="#fff"; 
-
+  */
     
     
     

@@ -6,7 +6,7 @@
              "img":{
                  "src":"img/mikudash.gif"
              }, 
-             "info": "Miku dash is a browser based platformer I am testing using <a href=\"https://phaser.io\" target=\"_blank\">Phaser.io</a>. The game is currently in development and not deployed. The standard arcade box physics collider shapes need to be replaced with more accurate ones in order to implement p2 physics and fix bugs with the player character standing on objects. This will also pave the ground to adding some enemies, a working HUD, menu system, and level design. A testable prototype build is comming soon. Stayed tuned." 
+             "info": "Miku dash is a browser based platformer I am testing using <a href=\"https://phaser.io\" target=\"_blank\">Phaser.io</a>. Currently the game's arcade box physics collider shapes need to be replaced with more accurate ones in order to fix bugs with the player character standing on objects. Enemies, HUD, Maps, and a better menu will be added soon. Stayed tuned." 
              , 
              "url":"https://github.com/010josh010/miku-dash"
          }, 
@@ -43,7 +43,7 @@
             "img": {
                 "src":"img/dbzbattler.gif"
             },
-            "info": "Dragonball Z is an anime created by Akira Toriyama that I grew up watching and still love to this day. I decided to build a turn based battle game built in Javascript/JQuery/CSS",
+            "info": "Dragonball Z is an anime created by Akira Toriyama that I grew up watching and still love to this day. I decided to build a turn based battle game built in Javascript/JQuery/CSS. Mind you this is an old project and does not reflect my current skill level. I just really like DBZ !!",
             "url": "https://dbz-battler-010josh010.herokuapp.com/"
         }, 
         
