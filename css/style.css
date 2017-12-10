@@ -10,7 +10,7 @@ body{
     margin:0 auto;
     color:#fff;
     background:#000;
-    width:80%;
+    width:1200px;
     
 }
 
@@ -549,15 +549,17 @@ address a{
 
 
 /*media-queries*/ 
+
+@media screen and (max-width:1200px){
+    body{
+        width:100%; 
+    }
+
+}
 @media screen and (max-width:870px){
     
      html , body {
         overflow-x: hidden !important;
-    }
-    
-    body{
-        margin:0px; 
-        width:100%;
     }
     
     .about p{
