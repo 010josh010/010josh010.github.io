@@ -2,15 +2,15 @@
 
 html{
     overflow-x: hidden !important;
-    background-color:#000000; 
+    background-color:#000;
 }
 
 body{
     overflow-x: hidden !important; 
     margin:0 auto;
     color:#fff;
-    background:#000000;
-    width:1200px;
+    background:#000;
+    width:80%;
     
 }
 
@@ -553,6 +553,11 @@ address a{
     
      html , body {
         overflow-x: hidden !important;
+    }
+    
+    body{
+        margin:0px; 
+        width:100%;
     }
     
     .about p{
